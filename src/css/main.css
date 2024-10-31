@@ -1,0 +1,72 @@
+*{
+    font-family: "Poppins", sans-serif;
+}
+
+/* HERO */
+.hero{
+    display: flex;
+    background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.549)) ,url('../assets/hero/hero.jpg');
+    background-size: cover;
+    background-position: center;
+    justify-content: center; /* Mengatur horizontal ke tengah */
+    align-items: center; /* Mengatur vertikal ke tengah */
+}
+
+.title {
+    text-align: center;
+}
+
+.title h1 {
+    color: white;
+    text-shadow: 
+        0 0 3px rgba(255, 255, 255, 0.6),   /* Bayangan putih dengan transparansi */
+        0 0 6px rgba(255, 255, 255, 0.5),
+        0 0 10px rgba(255, 255, 255, 0.4),  /* Gunakan rgba untuk transparansi */
+        0 0 15px rgba(255, 255, 255, 0.3),
+        0 0 20px rgba(255, 255, 255, 0.2);
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+
+.title p {
+    color: white;
+    width: 80%;
+    text-align: justify;
+    margin: 0 auto; 
+}
+
+
+.gallery {
+    display: flex;
+    align-items: center;
+} 
+
+.gallery img {
+    height: 200px;
+}
+
+.services {
+    background-color: #ecebeb;
+}
+
+@media screen and (max-width: 992px) {
+    .services {
+        padding-top: 100px;
+    }
+}
+
+.faq .accordion {
+    --bs-accordion-bg: #ecebeb;
+}
+
+.faq .accordion .accordion-button:focus {
+    box-shadow: none;
+}
+
+.faq .accordion .accordion-item .accordion-header{
+    line-height: 2;
+}
+
+.footer {
+    background-color: #212529;
+}
